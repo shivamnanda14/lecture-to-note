@@ -7,7 +7,7 @@ import tempfile
 # Configure Gemini API
 # ----------------------------
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 # ----------------------------
 # Streamlit UI
@@ -57,3 +57,4 @@ if uploaded_file:
     except Exception as e:
         st.error("Something went wrong during processing.")
         st.exception(e)
+
